@@ -8,7 +8,7 @@ import datagenerator
 # Just disables the warning, doesn't enable AVX/FMA
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-train_path = os.path.join('plant_disease_classification', 'datasets/train')
+train_path = os.path.join('plant-disease-classification/plant_disease_classification', 'datasets/train')
 classes = os.listdir(train_path)
 num_classes = len(classes)
 
