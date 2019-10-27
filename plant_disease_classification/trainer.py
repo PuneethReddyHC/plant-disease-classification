@@ -4,7 +4,8 @@
 import os
 import tensorflow as tf
 import datagenerator
-
+import tensorflow.contrib.eager as tfe
+tf.enable_eager_execution()
 # Just disables the warning, doesn't enable AVX/FMA
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
