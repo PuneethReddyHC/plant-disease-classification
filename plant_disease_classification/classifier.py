@@ -5,7 +5,8 @@ import os
 import cv2
 import numpy as np
 import tensorflow as tf
-
+import tensorflow.contrib.eager as tfe
+tf.enable_eager_execution()
 # Just disables the warning, doesn't enable AVX/FMA
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
